@@ -5,12 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format:code": "prettier src/*.ts --write"
+    "format": "prettier src/*.ts --write",
+    "lint": "eslint src/*.ts",
+    "lint:fix": "eslint src/*.ts --quiet --fix"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
     "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "eslint": "8.22.0",
+    "eslint-config-prettier": "^8.5.0"
   }
 }
